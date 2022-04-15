@@ -10,8 +10,8 @@ function App() {
 	const [degreeType, setDegreeType] = useState('F');
 	const [autocompleteTerm, setAutocompleteTerm] = useState('');
 	const [autocompleteResults, setAutocompleteResults] = useState([]);
-	const forecastURL = 'http://api.weatherapi.com/v1/forecast.json?key=';
-	const searchURL = 'http://api.weatherapi.com/v1/search.json?key=';
+	const forecastURL = 'https://api.weatherapi.com/v1/forecast.json?key=';
+	const searchURL = 'https://api.weatherapi.com/v1/search.json?key=';
 
 	useEffect(() => {
 		getWeather(searchTerm);
