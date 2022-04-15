@@ -28,7 +28,7 @@ function App() {
 					process.env.REACT_APP_WEATHER_API_KEY +
 					'&q=' +
 					term +
-					'&days=4&aqi=no&alerts=no'
+					'&days=4&aqi=no&alerts=no/'
 			)
 			.then((resp) => {
 				setWeatherObj(resp.data);
@@ -52,7 +52,8 @@ function App() {
 				searchURL +
 					process.env.REACT_APP_WEATHER_API_KEY +
 					'&q=' +
-					e.target.value
+					e.target.value +
+					'/'
 			)
 			.then((resp) => {
 				// setWeatherObj(resp.data);
